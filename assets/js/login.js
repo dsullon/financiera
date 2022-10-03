@@ -19,11 +19,14 @@ async function iniciarSesion(){
     datos.append("password", txtPassword.value);
     datos.append("accion", "login");
     const url = "data/auth.php";
-    const respuesta = fetch(url, {
+    const respuesta = await fetch(url, {
         method: 'POST',
         body: datos
     })
     const resultado = await respuesta.json();
-    console.log(resultado);
-    alert('Procesando');
+    if(resultado.codigo === 200){
+        window.location = "index.php";
+    } else {
+        alert(resultado.mensaje);
+    }
 }

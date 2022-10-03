@@ -32,7 +32,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="pages/layout/top-nav.html" class="nav-link">
+                            <a href="clientes.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Clientes</p>
                             </a>
@@ -75,7 +75,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+                    <a href="data/logout.php" class="nav-link">
                         <i class="nav-icon fas fa-file"></i>
                         <p>Cerrar sesión</p>
                     </a>
